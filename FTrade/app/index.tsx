@@ -1,5 +1,5 @@
-import CalendarContainer from "@/components/CalendarContainer";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import SCalendar from "@/components/SCalendar";
+import { StyleSheet, View } from "react-native";
 export default function Index() {
   return (
     <View
@@ -12,9 +12,9 @@ export default function Index() {
     borderStyle: 'solid',     // 테두리의 스타일 ('solid', 'dotted', 'dashed' 중 선택)
       }}
     >
-      <Pressable onPress={()=>{console.log("click")}}><Text>클릭점</Text></Pressable>
-      <CalendarContainer />
-      <Text>반갑습니데이!!</Text>
+      {/* <Pressable onPress={()=>{console.log("click")}}><Text>클릭점</Text></Pressable> */}
+      {/* <CalendarContainer /> */}
+      <SCalendar />
     </View>
   );
 }
